@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: compte-rendus.aux
+The style file: plain.bst
+Database file #1: Biblio.bib
+Warning--entry type for "oetiker11" isn't style-file defined
+--line 2 of file Biblio.bib
+Warning--entry type for "oetiker18" isn't style-file defined
+--line 9 of file Biblio.bib
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            502 strings with 4380 characters,
+and the built_in function-call counts, 604 in all, are:
+= -- 46
+> -- 46
+< -- 0
++ -- 19
+- -- 16
+* -- 38
+:= -- 107
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 14
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 14
+empty$ -- 45
+format.name$ -- 16
+if$ -- 119
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 0
+newline$ -- 11
+num.names$ -- 4
+pop$ -- 22
+preamble$ -- 1
+purify$ -- 12
+quote$ -- 0
+skip$ -- 20
+stack$ -- 0
+substring$ -- 11
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 0
+while$ -- 4
+width$ -- 3
+write$ -- 16
+(There were 2 warnings)

@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{fourier\PYGZus{}coef} \PYG{o}{=} \PYG{p}{[]}
+\PYG{k}{for} \PYG{n}{ligne} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{x}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]):}
+    \PYG{n}{serie} \PYG{o}{=} \PYG{n}{x}\PYG{o}{.}\PYG{n}{iloc}\PYG{p}{[}\PYG{n}{ligne}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{:]}
+    \PYG{n}{ft} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{fft}\PYG{p}{(}\PYG{n}{serie}\PYG{p}{)}
+    \PYG{n}{module} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n+nb}{map}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{absolute}\PYG{p}{,}\PYG{n}{ft}\PYG{p}{))}
+    \PYG{n}{argument} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n+nb}{map}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{angle}\PYG{p}{,}\PYG{n}{ft}\PYG{p}{))}
+    \PYG{n}{n} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{module}\PYG{p}{)}
+    \PYG{n}{fourier\PYGZus{}coef} \PYG{o}{+=} \PYG{p}{[[}\PYG{n}{module}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{module}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{n}{n}\PYG{p}{,}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{module}\PYG{p}{))]}\PYG{o}{+}\PYG{p}{[}\PYG{n}{argument}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{argument}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{n}{n}\PYG{p}{,}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{argument}\PYG{p}{))]]}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{fourier\PYGZus{}coef}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}\PYG{o}{//}\PYG{l+m+mi}{2}\PYG{p}{):}
+    \PYG{n}{x}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}fourier\PYGZus{}coef\PYGZus{}module\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{i}\PYG{p}{)]} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n+nb}{map}\PYG{p}{(}\PYG{k}{lambda} \PYG{n}{x}\PYG{p}{:}\PYG{n}{x}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],}\PYG{n}{fourier\PYGZus{}coef}\PYG{p}{))}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{fourier\PYGZus{}coef}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}\PYG{o}{//}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{fourier\PYGZus{}coef}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])):}
+    \PYG{n}{x}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}fourier\PYGZus{}coef\PYGZus{}argument\PYGZdq{}}\PYG{o}{+}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{fourier\PYGZus{}coef}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}\PYG{o}{//}\PYG{l+m+mi}{2}\PYG{p}{)]} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n+nb}{map}\PYG{p}{(}\PYG{k}{lambda} \PYG{n}{x}\PYG{p}{:}\PYG{n}{x}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],}\PYG{n}{fourier\PYGZus{}coef}\PYG{p}{))}
+\end{Verbatim}

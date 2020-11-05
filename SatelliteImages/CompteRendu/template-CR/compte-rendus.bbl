@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{oetiker18}
+Tobias \OE{}tiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl.
+\newblock The not so short introduction to {\LaTeXe}, {\em available online at
+  \href{https://tobi.oetiker.ch/lshort/lshort.pdf}{this url}}.
+
+\bibitem{oetiker11}
+Tobias \OE{}tiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl.
+\newblock Une courte~(?) introduction {\`a} {\LaTeXe}, {\em disponible en ligne
+  {\`a}
+  \href{ftp://ctan.tug.org/tex-archive/info/lshort/french/lshort-fr.pdf}{cette
+  url}}.
+
+\end{thebibliography}

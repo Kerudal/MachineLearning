@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{seaborn} \PYG{k+kn}{as} \PYG{n+nn}{sns}
+
+\PYG{n}{iris} \PYG{o}{=} \PYG{n}{sns}\PYG{o}{.}\PYG{n}{load\PYGZus{}dataset}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}iris\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{iris}\PYG{o}{.}\PYG{n}{drop}\PYG{p}{(}\PYG{n}{columns}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}species\PYGZdq{}}\PYG{p}{])}\PYG{o}{.}\PYG{n}{boxplot}\PYG{p}{()}
+\end{Verbatim}

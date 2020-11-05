@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+pdflatex \PYGZhy{}\PYGZhy{}file\PYGZhy{}line\PYGZhy{}error \PYGZhy{}\PYGZhy{}synctex=1 \PYGZhy{}\PYGZhy{}shell\PYGZhy{}escape compte\PYGZhy{}rendus.tex
+\end{Verbatim}

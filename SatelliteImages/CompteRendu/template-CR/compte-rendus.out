@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Analyse exploratoire des donn\351es }{}% 2
+\BOOKMARK [1][-]{section.3}{Analyse Spectrale}{}% 3
+\BOOKMARK [1][-]{section.4}{Apprentissage}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Classification ascendante hi\351rarchique}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{K-Means}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{K plus proche voisin}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.4}{Analyse discriminante}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.5}{Arbres de d\351cision et m\351thodes ensemblistes}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.6}{Support Vector Machine}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Ouverture}{}% 11
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 12
+\BOOKMARK [1][-]{appendix.A}{Code}{}% 13

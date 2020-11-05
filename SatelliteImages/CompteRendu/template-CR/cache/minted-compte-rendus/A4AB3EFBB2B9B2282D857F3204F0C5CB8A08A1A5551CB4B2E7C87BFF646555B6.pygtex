@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.cluster} \PYG{k+kn}{import} \PYG{n}{KMeans}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn.metrics.cluster} \PYG{k+kn}{import} \PYG{n}{adjusted\PYGZus{}rand\PYGZus{}score}
+
+\PYG{n}{x\PYGZus{}quant} \PYG{o}{=} \PYG{n}{x}\PYG{o}{.}\PYG{n}{drop}\PYG{p}{(}\PYG{n}{columns}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}class\PYGZdq{}}\PYG{p}{])}
+\PYG{n}{km} \PYG{o}{=} \PYG{n}{KMeans}\PYG{p}{(}\PYG{n}{n\PYGZus{}clusters}\PYG{o}{=}\PYG{n}{k}\PYG{p}{,}\PYG{n}{init}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}random\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{km}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{x\PYGZus{}quant}\PYG{p}{)}
+\PYG{n}{adjusted\PYGZus{}rand\PYGZus{}score}\PYG{p}{(}\PYG{n}{km}\PYG{o}{.}\PYG{n}{labels\PYGZus{}}\PYG{p}{,}\PYG{n}{x}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}class\PYGZsq{}}\PYG{p}{])}
+\end{Verbatim}
